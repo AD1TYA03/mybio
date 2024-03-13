@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(177deg, #E7F5FE 9.91%, #BEE4FF 71.21%);
+  display: block;
+}
+
+.footer img{
+  width: 100%;
+  position: fixed;
+  transform: translateY(-30%);
+}

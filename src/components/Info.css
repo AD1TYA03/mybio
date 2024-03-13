@@ -1,0 +1,85 @@
+.info-section{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 65%;
+    padding: 20px;
+    margin-top: 5vh;
+    margin-left: 4%;
+    overflow: visible;
+}
+
+
+
+.hire-button{
+background: #000;
+color: #FFF;
+letter-spacing: 1.98px;
+}
+.resume-button{
+background: #FF7F6F;
+color: #FFF;
+letter-spacing: 1.98px;
+}
+
+
+h1{
+    font-size: 7vw;
+    max-width: 100%;
+    line-height: normal;
+    font-family: "Roboto Mono";
+}
+
+h2{
+    font-size: 30px;
+    max-width: 100%;
+    color: rgb(25, 25, 25); 
+}
+
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 60%;
+    font-size: large;
+    color: #686868;
+    font-family: "Ropa Sans";
+}
+
+button{
+    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 12px;
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    border-radius: 25px;
+}
+
+.hire-button:hover{
+    background-color: white;
+    color: black;
+}
+.resume-button:hover{
+    background-color: white;
+    color: #FF7F6F;
+}
+
+.button-container{
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adi{
+    height: 40%;
+    width: 40%;
+    margin-right: 10%;
+    position: relative;
+}
+
+.main-info{
+    display: flex;
+    align-items: center;
+    margin-top: 10vh;
+}
