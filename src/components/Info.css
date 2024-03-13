@@ -81,5 +81,5 @@ button{
 .main-info{
     display: flex;
     align-items: center;
-    margin-top: 10vh;
+    padding-top: 10vh;
 }
