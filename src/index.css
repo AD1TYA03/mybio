@@ -6,8 +6,8 @@
 
 :root{
    height: 100vh;
-   width: 100vh;
+   width: 100vw;
     background-image: linear-gradient(177deg, #E7F5FE 9.91%, #BEE4FF 71.21%);
-    display: block;
+    display: flex;
 
 }
