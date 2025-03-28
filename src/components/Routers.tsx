@@ -42,7 +42,7 @@ function Routers() {
             </ul>
           </nav>
 
-          {/* Contact Me Button (Always Visible) */}
+          {/* Contact Me Button  */}
           <button className="hidden md:block px-5 py-2 bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 rounded-lg">
             Contact Me
           </button>
@@ -67,7 +67,7 @@ function Routers() {
           </div>
         )}
 
-        {/* Add padding to prevent content overlap */}
+        
         <div className="pt-16">
           <Routes>
             <Route path="/" element={<App />} />
