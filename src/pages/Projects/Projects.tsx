@@ -37,6 +37,14 @@ function Projects() {
       ],
     },
     {
+      title: "AnyChat",
+      description: "AnyChat is a real-time, no-login required chat application that allows users to see a list of connected users and start one-on-one chats instantly. No user authentication is needed, and chat history is not persistent.",
+      image: "https://images.pexels.com/photos/7915236/pexels-photo-7915236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      demoLink: "https://anychatweb.vercel.app",
+      techStack: ["React", "Node.js", "Socket.IO", "Express", "JavaScript"],
+    },
+    
+    {
       title: "To-Do List App",
       description:
         "A simple and intuitive to-do list application that helps users manage their daily tasks efficiently. Features include task creation, editing, deletion, filtering by status, and persistent storage.",
@@ -45,6 +53,7 @@ function Projects() {
       demoLink: "https://todo-app.example.com",
       techStack: ["React", "JavaScript", "CSS", "LocalStorage"],
     },
+
   ];
 
   return (
