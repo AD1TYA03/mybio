@@ -2,6 +2,7 @@
 .router-container{
     display: block;
     justify-content: space-between;
+    background: transparent;
     width: 100%;
 }
 
