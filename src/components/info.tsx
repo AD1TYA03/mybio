@@ -6,9 +6,7 @@ import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { useState, useEffect } from "react";
 
 function Info() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
-  const [startWaving, setStartWaving] = useState(false);
 
   // Mouse tracking for parallax effects
   const mouseX = useMotionValue(0);
@@ -32,21 +30,13 @@ function Info() {
       
       mouseX.set(x);
       mouseY.set(y);
-      setMousePosition({ x: clientX, y: clientY });
     };
 
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [mouseX, mouseY]);
 
-  // Start waving animation after initial animations
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setStartWaving(true);
-    }, 1200); // Start waving after 1.2 seconds
 
-    return () => clearTimeout(timer);
-  }, []);
 
   // Animation variants for staggered content
   const containerVariants = {
@@ -120,20 +110,10 @@ function Info() {
     }
   };
 
-  const typewriterVariants = {
-    hidden: { width: 0 },
-    visible: {
-      width: "100%",
-      transition: {
-        duration: 2,
-        ease: "easeInOut",
-        delay: 1
-      }
-    }
-  };
+
 
   // Interactive floating elements
-  const FloatingElement = ({ children, delay = 0, duration = 3 }) => (
+  const FloatingElement = ({ children, delay = 0, duration = 3 }: { children: React.ReactNode; delay?: number; duration?: number }) => (
     <motion.div
       animate={{
         y: [0, -10, 0],

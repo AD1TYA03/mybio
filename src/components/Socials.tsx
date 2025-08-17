@@ -71,7 +71,7 @@ function Socials() {
         Let's connect
       </motion.p>
       <div className="flex gap-6 justify-center lg:justify-start">
-        {socialLinks.map((social, index) => (
+        {socialLinks.map((social) => (
           <motion.a
             key={social.href}
             href={social.href}

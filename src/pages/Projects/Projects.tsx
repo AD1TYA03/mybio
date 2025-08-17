@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import ParticleBackground from "../../components/ParticleBackground";
 import ProjectCard from "../../components/ProjectCard";
 import { ProjectService } from "../../services/projectService";
-import { useState, useEffect } from "react";
 
 function Projects() {
   const projects = ProjectService.getAllProjects();
