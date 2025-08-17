@@ -6,7 +6,7 @@ import { useRef, useState, useEffect } from "react";
 
 function App() {
   return (
-    <div className="App h-screen flex flex-col overflow-hidden relative universal-bg">
+    <div className="App min-h-screen flex flex-col relative universal-bg">
       {/* Enhanced Particle Background */}
       <ParticleBackground />
       
@@ -14,7 +14,7 @@ function App() {
       <MouseTrail />
       
       {/* Main Content */}
-      <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 relative z-10">
+      <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 relative z-10 py-8">
         <Info />
       </main>
 

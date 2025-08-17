@@ -25,11 +25,30 @@
   .info-container h1 {
     @apply text-2xl;
   }
+  
+  .info-container {
+    @apply px-2;
+  }
+  
+  .primary-button, .secondary-button {
+    @apply px-4 py-2 text-sm;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
   .info-container h1 {
     @apply text-3xl;
+  }
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  .info-container {
+    @apply py-4;
+  }
+  
+  .info-container .space-y-6 > * {
+    @apply mb-4;
   }
 }
 

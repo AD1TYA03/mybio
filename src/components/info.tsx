@@ -155,7 +155,7 @@ function Info() {
 
       {/* Mobile Image with Enhanced Interactions */}
       <motion.div 
-        className="md:hidden mb-6 flex justify-center"
+        className="md:hidden mb-8 flex justify-center"
         variants={imageVariants}
         initial="hidden"
         animate="visible"
@@ -180,7 +180,7 @@ function Info() {
           transition={{ duration: 0.3 }}
         >
           <img 
-            className="w-80 h-80 rounded-full object-cover relative z-10" 
+            className="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover relative z-10" 
             src={Aditya} 
             alt="Aditya - Full Stack Developer" 
           />
@@ -199,7 +199,7 @@ function Info() {
       <div className="grid lg:grid-cols-2 gap-8 items-center">
         {/* Content Section with Enhanced Interactions */}
         <motion.div 
-          className="text-center lg:text-left space-y-6"
+          className="text-center lg:text-left space-y-6 px-4 sm:px-0"
           variants={containerVariants}
           initial="hidden"
           animate="visible"

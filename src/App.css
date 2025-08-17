@@ -5,6 +5,14 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .App {
+    overflow-y: auto;
+  }
 }
 
 /* Smooth transitions */
