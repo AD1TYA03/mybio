@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Calendar } from "lucide-react";
+import { ExternalLink, Github, Calendar, ChevronDown, ChevronUp } from "lucide-react";
 import { Project } from "../types/Project";
+import { useState } from "react";
 
 interface ProjectCardProps {
   project: Project;
@@ -10,6 +11,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, isLast = false }) => {
   const isLeft = index % 2 === 0;
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <motion.div
@@ -60,9 +62,29 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, isLast = fals
           </div>
 
           {/* Description */}
-          <p className="text-gray-700 text-sm leading-relaxed mb-4 line-clamp-3 overflow-hidden">
-            {project.description}
-          </p>
+          <div className="mb-4">
+            <p className={`text-gray-700 text-sm leading-relaxed ${!isExpanded ? 'line-clamp-3' : ''} overflow-hidden transition-all duration-300`}>
+              {project.description}
+            </p>
+            {project.description.length > 150 && (
+              <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className="flex items-center gap-1 text-orange-500 hover:text-orange-600 text-sm font-semibold mt-2 transition-colors"
+              >
+                {isExpanded ? (
+                  <>
+                    <ChevronUp size={14} />
+                    Read Less
+                  </>
+                ) : (
+                  <>
+                    <ChevronDown size={14} />
+                    Read More
+                  </>
+                )}
+              </button>
+            )}
+          </div>
 
           {/* Project Links */}
           <div className="flex gap-3 mt-auto">

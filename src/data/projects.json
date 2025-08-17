@@ -1,7 +1,133 @@
 [
   {
+    "title": "AutoBot - Cold Email Automation",
+    "description": "AI-powered cold email automation platform for job applications. • Resume upload & parsing • Contact list processing • AI email generation with Google Gemini • Email automation with tracking • Built with Next.js, TypeScript & Tailwind CSS",
+    "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "demoLink": "https://autobot-coldmailer.vercel.app/",
+    "githubLink": "https://github.com/AD1TYA03/autobot-coldmailer",
+    "techStack": [
+      "Next.js 15",
+      "TypeScript",
+      "Tailwind CSS",
+      "Google Gemini AI",
+      "Nodemailer",
+      "Gmail SMTP",
+      "Lucide React",
+      "Headless UI"
+    ],
+    "featured": true,
+    "date": "August 2025",
+    "category": "AI Web App"
+  },
+  {
+    "title": "Samridhya - Digital Loan Platform",
+    "description": "Full-stack development for leading Indian loan platform. • Website redesign with modern animations • Custom CMS (/cms) with rich text editor • Dynamic blog system (/blog) with SEO • Firebase functions & authentication • Loan calculator & credit score checker • Real-time loan tracking features",
+    "image": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "demoLink": "https://samridhya.com/",
+    "githubLink": "",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Firebase Functions",
+      "Custom CMS",
+      "Firebase Authentication",
+      "Firebase Firestore",
+      "Rich Text Editor",
+      "Image Upload",
+      "Blog System",
+      "SEO Optimization",
+      "Animations",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Full-Stack Development"
+    ],
+    "featured": true,
+    "date": "July 2025",
+    "category": "Full-Stack Web App"
+  },
+  {
+    "title": "AnyChat Web App",
+    "description": "Real-time chat application with instant messaging capabilities. • No authentication required for quick access • User list & one-on-one messaging • Real-time updates with WebSocket • Clean & modern UI design • Fast & responsive communication",
+    "image": "https://images.pexels.com/photos/7915236/pexels-photo-7915236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "demoLink": "https://anychatweb.vercel.app/",
+    "githubLink": "https://github.com/AD1TYA03/anyChat",
+    "techStack": [
+      "React",
+      "Node.js",
+      "Socket.IO",
+      "Express",
+      "JavaScript",
+      "Real-time Communication",
+      "WebSocket"
+    ],
+    "featured": false,
+    "date": "April 2025",
+    "category": "Real-time App"
+  },
+  {
+    "title": "Ravana AI Voice Assistant",
+    "description": "AI voice assistant that behaves like Ravana character. • Voice interaction & speech recognition • Character-based AI responses • Real-time voice processing • Interactive conversation interface • Modern React & Vite development • Deployed on Vercel platform",
+    "image": "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "demoLink": "https://ravana-ai.vercel.app/",
+    "githubLink": "https://github.com/AD1TYA03/ravana_ai",
+    "techStack": [
+      "React",
+      "Vite",
+      "JavaScript",
+      "Speech Recognition",
+      "Voice Synthesis",
+      "AI Integration",
+      "Real-time Processing",
+      "Vercel Deployment"
+    ],
+    "featured": false,
+    "date": "April 2025",
+    "category": "AI Web App"
+  },
+  {
+    "title": "DevConnect - Social Media for Developers",
+    "description": "Full-stack social media platform designed specifically for developers. • User authentication & profiles • Post sharing & interactions • Real-time messaging & notifications • Developer-focused features • MongoDB database integration • React Redux state management • Collaborative development with team",
+    "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "demoLink": "https://devconnectweb.vercel.app/",
+    "githubLink": "https://github.com/AD1TYA03/DevConnect",
+    "techStack": [
+      "React",
+      "Redux",
+      "MongoDB",
+      "Node.js",
+      "Express",
+      "JavaScript",
+      "Full-Stack Development",
+      "Social Media Features",
+      "Real-time Communication"
+    ],
+    "featured": true,
+    "date": "April 2025",
+    "category": "Full-Stack Social Platform"
+  },
+  {
+    "title": "NoteCrypt - Encrypted Note Taking",
+    "description": "Secure digital note-taking application with end-to-end encryption. • Complete CRUD operations for notes • AES encryption on client-side • Firebase authentication & Firestore • Notes encrypted before database storage • Only user can decrypt & read notes • Privacy-focused with zero-knowledge architecture",
+    "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "demoLink": "https://notecryptweb.vercel.app/",
+    "githubLink": "https://github.com/AD1TYA03/NoteCrypt",
+    "techStack": [
+      "React",
+      "Firebase",
+      "Firestore",
+      "CryptoJS",
+      "AES Encryption",
+      "Tailwind CSS",
+      "Vite",
+      "Security & Privacy"
+    ],
+    "featured": true,
+    "date": "April 2025",
+    "category": "Security App"
+  },
+  {
     "title": "FitBharat",
-    "description": "A comprehensive fitness and wellness app that promotes a healthy lifestyle through gamified challenges, community interaction, and personalized fitness tracking. Built with React Native and MongoDB using microservices architecture.",
+    "description": "Comprehensive fitness & wellness app with gamified challenges. • Community interaction features • Personalized fitness tracking • React Native & MongoDB • Microservices architecture",
     "image": "https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "demoLink": "https://fitbharat.example.com",
     "githubLink": "https://github.com/example/fitbharat",
@@ -21,7 +147,7 @@
   },
   {
     "title": "BLIS (Book Libraries In Seconds)",
-    "description": "A cross-platform app for booking study rooms with flexible subscriptions. Features map-based library discovery, secure payments, real-time booking management, and comprehensive admin dashboard for library owners.",
+    "description": "Cross-platform study room booking app with subscriptions. • Map-based library discovery • Secure payment integration • Real-time booking management • Admin dashboard for library owners",
     "image": "https://images.pexels.com/photos/1370296/pexels-photo-1370296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "demoLink": "https://blis-app.example.com",
     "githubLink": "https://github.com/example/blis",
@@ -38,39 +164,7 @@
     "featured": true,
     "date": "2024",
     "category": "Web App"
-  },
-  {
-    "title": "AnyChat",
-    "description": "A real-time chat application that allows users to connect instantly without authentication. Features include user list, one-on-one messaging, and real-time updates using WebSocket technology.",
-    "image": "https://images.pexels.com/photos/7915236/pexels-photo-7915236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "demoLink": "https://anychatweb.vercel.app",
-    "githubLink": "https://github.com/example/anychat",
-    "techStack": [
-      "React",
-      "Node.js",
-      "Socket.IO",
-      "Express",
-      "JavaScript"
-    ],
-    "featured": false,
-    "date": "2023",
-    "category": "Real-time App"
-  },
-  {
-    "title": "To-Do List App",
-    "description": "A modern and intuitive task management application with features like task creation, editing, deletion, filtering by status, and persistent local storage for seamless user experience.",
-    "image": "https://images.pexels.com/photos/1151855/pexels-photo-1151855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "demoLink": "https://todo-app.example.com",
-    "githubLink": "https://github.com/example/todo-app",
-    "techStack": [
-      "React",
-      "JavaScript",
-      "CSS",
-      "LocalStorage",
-      "Tailwind CSS"
-    ],
-    "featured": false,
-    "date": "2023",
-    "category": "Web App"
+  
   }
+  
 ] 

@@ -81,9 +81,11 @@ function About() {
   }, []);
 
   const skills = {
-    frontend: ["React", "TypeScript", "Next.js", "Tailwind"],
-    backend: ["Node.js", "MongoDB", "GraphQL", "AWS"],
-    mobile: ["React Native", "Expo", "Firebase", "Redux"]
+    frontend: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vite", "Redux"],
+    backend: ["Node.js", "MongoDB", "Firebase", "Express", "Socket.IO", "Firebase Functions"],
+    security: ["AES Encryption", "CryptoJS", "End-to-End Encryption", "Authentication"],
+    ai: ["Google Gemini AI", "Speech Recognition", "Voice Synthesis", "AI Integration"],
+    tools: ["Git", "Vercel", "Firebase Hosting", "Firestore", "Real-time Communication"]
   };
 
   const achievements = [
@@ -94,11 +96,11 @@ function About() {
 
   const expertise = [
     "Full-Stack",
-    "Mobile Apps", 
-    "Cloud",
-    "UI/UX",
-    "APIs",
-    "Databases"
+    "AI Integration", 
+    "Security",
+    "Real-time Apps",
+    "Voice Technology",
+    "Cloud Services"
   ];
 
   return (
