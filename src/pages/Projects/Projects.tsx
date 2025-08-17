@@ -1,93 +1,150 @@
-import "./Projects.css";
+import { motion } from "framer-motion";
+import ParticleBackground from "../../components/ParticleBackground";
+import ProjectCard from "../../components/ProjectCard";
+import { ProjectService } from "../../services/projectService";
+import { useState, useEffect } from "react";
 
 function Projects() {
-  const projects = [
-    {
-      title: "FitBharat",
-      description:
-        "A fitness and wellness app that promotes a healthy lifestyle through gamified challenges, community interaction, and personalized fitness tracking. Built using React Native and MongoDB with microservices architecture.",
-      image:
-        "https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      demoLink: "https://fitbharat.example.com",
-      techStack: [
-        "React Native",
-        "Node.js",
-        "MongoDB",
-        "Tailwind CSS",
-        "Express",
-        "JWT",
-        "Socket.IO",
-        "Google Map API",
-      ],
-    },
-    {
-      title: "BLIS (Book Libraries In Seconds)",
-      description:
-        "A cross-platform app for booking study rooms with flexible subscriptions. Includes map-based library discovery, secure payments, real-time booking management, and admin dashboard for library owners. Designed with scalability and user experience in mind.",
-      image:
-        "https://images.pexels.com/photos/1370296/pexels-photo-1370296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      demoLink: "https://blis-app.example.com",
-      techStack: [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "Express",
-        "Tailwind CSS",
-        "JWT",
-      ],
-    },
-    {
-      title: "AnyChat",
-      description: "AnyChat is a real-time, no-login required chat application that allows users to see a list of connected users and start one-on-one chats instantly. No user authentication is needed, and chat history is not persistent.",
-      image: "https://images.pexels.com/photos/7915236/pexels-photo-7915236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      demoLink: "https://anychatweb.vercel.app",
-      techStack: ["React", "Node.js", "Socket.IO", "Express", "JavaScript"],
-    },
-    
-    {
-      title: "To-Do List App",
-      description:
-        "A simple and intuitive to-do list application that helps users manage their daily tasks efficiently. Features include task creation, editing, deletion, filtering by status, and persistent storage.",
-      image:
-        "https://images.pexels.com/photos/1151855/pexels-photo-1151855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      demoLink: "https://todo-app.example.com",
-      techStack: ["React", "JavaScript", "CSS", "LocalStorage"],
-    },
+  const projects = ProjectService.getAllProjects();
 
-  ];
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const timelineLineVariants = {
+    hidden: { scaleY: 0 },
+    visible: {
+      scaleY: 1,
+      transition: {
+        duration: 1.5,
+        ease: "easeInOut"
+      }
+    }
+  };
+
+  const pulseVariants = {
+    pulse: {
+      scale: [1, 1.1, 1],
+      opacity: [0.4, 0.8, 0.4],
+      transition: {
+        duration: 2,
+        repeat: Infinity,
+        ease: "easeInOut"
+      }
+    }
+  };
 
   return (
-    <div className="projects-container">
-      <h1 className="projects-title">My Projects</h1>
-      <div className="projects-grid">
-        {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-image"
-            />
-            <div className="project-details">
-              <h2 className="project-title">{project.title}</h2>
-              <p className="project-description">{project.description}</p>
-              <div className="project-tech">
-                {project.techStack.map((tech, techIndex) => (
-                  <span key={techIndex} className="tech-tag">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <a
-                href={project.demoLink}
-                className="project-demo"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo
-              </a>
+    <div className="min-h-screen relative overflow-hidden universal-bg">
+      {/* Particle Background */}
+      <ParticleBackground />
+      
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
+        {/* Header */}
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <motion.div 
+            className="text-sm sm:text-base md:text-lg text-orange-600 font-medium tracking-wider uppercase mb-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            MY
+          </motion.div>
+          <motion.h1 
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 font-mono mb-3 leading-tight"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+          >
+            <span className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 bg-clip-text text-transparent">
+            PROJECTS
+            </span>
+          </motion.h1>
+          <motion.div
+            className="w-16 h-0.5 bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 mx-auto rounded-full"
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            transition={{ delay: 0.6, duration: 0.5 }}
+          />
+          <motion.p 
+            className="text-sm text-gray-600 max-w-md mx-auto font-sans leading-relaxed mt-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
+          >
+            A journey through innovation and creativity
+          </motion.p>
+        </motion.div>
+
+        {/* Timeline Container */}
+        <motion.div 
+          className="relative max-w-4xl mx-auto mb-16"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          style={{ position: 'relative', zIndex: 1 }}
+        >
+          {/* Timeline Items */}
+          <div className="relative" style={{ position: 'relative', zIndex: 2 }}>
+            {/* Interactive Timeline Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 z-10" style={{ height: '100%' }}>
+              {/* Main Timeline Line */}
+              <motion.div 
+                className="w-px bg-gradient-to-b from-orange-300 via-orange-400 to-orange-300 opacity-40"
+                variants={timelineLineVariants}
+                initial="hidden"
+                animate="visible"
+                style={{ zIndex: 1, height: '100%' }}
+              />
+              
+              {/* Animated Pulse Effect */}
+              <motion.div 
+                className="absolute w-2 h-2 bg-orange-500 rounded-full opacity-60"
+                variants={pulseVariants}
+                animate="pulse"
+                style={{ 
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  top: '50%',
+                  zIndex: 2
+                }}
+              />
+
+              {/* Progress Line */}
+              <motion.div 
+                className="absolute w-0.5 bg-gradient-to-b from-orange-500 to-red-500 origin-top"
+                initial={{ scaleY: 0 }}
+                animate={{ 
+                  scaleY: 0.3
+                }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                style={{ zIndex: 3, height: '100%' }}
+              />
             </div>
+
+            {projects.map((project, index) => (
+              <ProjectCard 
+                key={index} 
+                project={project} 
+                index={index}
+                isLast={index === projects.length - 1}
+              />
+            ))}
           </div>
-        ))}
+        </motion.div>
+
+
       </div>
     </div>
   );

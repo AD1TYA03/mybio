@@ -1,0 +1,76 @@
+[
+  {
+    "title": "FitBharat",
+    "description": "A comprehensive fitness and wellness app that promotes a healthy lifestyle through gamified challenges, community interaction, and personalized fitness tracking. Built with React Native and MongoDB using microservices architecture.",
+    "image": "https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "demoLink": "https://fitbharat.example.com",
+    "githubLink": "https://github.com/example/fitbharat",
+    "techStack": [
+      "React Native",
+      "Node.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Express",
+      "JWT",
+      "Socket.IO",
+      "Google Maps API"
+    ],
+    "featured": true,
+    "date": "2024",
+    "category": "Mobile App"
+  },
+  {
+    "title": "BLIS (Book Libraries In Seconds)",
+    "description": "A cross-platform app for booking study rooms with flexible subscriptions. Features map-based library discovery, secure payments, real-time booking management, and comprehensive admin dashboard for library owners.",
+    "image": "https://images.pexels.com/photos/1370296/pexels-photo-1370296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "demoLink": "https://blis-app.example.com",
+    "githubLink": "https://github.com/example/blis",
+    "techStack": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "Tailwind CSS",
+      "JWT",
+      "Stripe API",
+      "Socket.IO"
+    ],
+    "featured": true,
+    "date": "2024",
+    "category": "Web App"
+  },
+  {
+    "title": "AnyChat",
+    "description": "A real-time chat application that allows users to connect instantly without authentication. Features include user list, one-on-one messaging, and real-time updates using WebSocket technology.",
+    "image": "https://images.pexels.com/photos/7915236/pexels-photo-7915236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "demoLink": "https://anychatweb.vercel.app",
+    "githubLink": "https://github.com/example/anychat",
+    "techStack": [
+      "React",
+      "Node.js",
+      "Socket.IO",
+      "Express",
+      "JavaScript"
+    ],
+    "featured": false,
+    "date": "2023",
+    "category": "Real-time App"
+  },
+  {
+    "title": "To-Do List App",
+    "description": "A modern and intuitive task management application with features like task creation, editing, deletion, filtering by status, and persistent local storage for seamless user experience.",
+    "image": "https://images.pexels.com/photos/1151855/pexels-photo-1151855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "demoLink": "https://todo-app.example.com",
+    "githubLink": "https://github.com/example/todo-app",
+    "techStack": [
+      "React",
+      "JavaScript",
+      "CSS",
+      "LocalStorage",
+      "Tailwind CSS"
+    ],
+    "featured": false,
+    "date": "2023",
+    "category": "Web App"
+  }
+] 

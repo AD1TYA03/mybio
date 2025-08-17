@@ -1,94 +1,38 @@
-
-.router-container{
-    display: block;
-    justify-content: space-between;
-    background: transparent;
-    width: 100%;
+/* Modern Navigation Styles */
+.router-container {
+  @apply min-h-screen;
+  background: linear-gradient(177deg, #E7F5FE 9.91%, #BEE4FF 71.21%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-nav{
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.contact-btn {
+  @apply px-6 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-red-600 transform hover:-translate-y-0.5 transition-all duration-200 shadow-md hover:shadow-lg;
 }
 
-li{
-    display: inline;
-    margin-left: 6vw;
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-
-
-.logo{
-    display: inline-block;
+/* Focus styles for accessibility */
+button:focus,
+a:focus {
+  @apply outline-none ring-2 ring-orange-500 ring-offset-2;
 }
 
-#header-container {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Space between items */
+/* Hide scrollbars - consistent with App.css */
+::-webkit-scrollbar {
+  display: none;
 }
 
-/* Apply margin-right: auto to the first child element */
-#header-container > *:first-child {
-    margin-right: auto;
+/* For Firefox */
+* {
+  scrollbar-width: none;
 }
 
-/* Apply margin-left: auto to the last child element */
-#header-container > *:last-child {
-    margin-left: auto;
-}
-
-a:hover{
-    color: #FF7F6F ;
-}
-
-
-
-
-
-.header{
-    display: flex;
-    justify-content: space-between;
-   
-    align-items: center;
-}
-.navigation ul li{
-display: inline;
-justify-content: space-between;
-padding: 10px;
-margin-left: 4vh;
-}
-.navigation ul li:hover{
-    color: #FF7F6F;
-font-style: normal;
-line-height: normal;
-}
-
-.navigation ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.navigation{
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-button{
-    padding: 20px;
-}
-
-.logo{
-    padding: 2vh;
-}
-.logo-name{
-    color: #FF6B00;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-font-family: Megrim;
-font-size: 32px;
-
+/* For IE and Edge */
+* {
+  -ms-overflow-style: none;
 }

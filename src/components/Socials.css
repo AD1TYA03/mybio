@@ -1,14 +1,27 @@
-.socials-container img{
-    width: 46px;
-    height: auto;
-    
+.socials-container {
+  @apply flex flex-col items-center lg:items-start;
 }
 
-.socials-container{
-    display: flex;
-    max-width: 200px;
-    padding: 20px;
-    justify-content: space-between;
-    background: transparent;
-    
+.social-link {
+  @apply p-3 rounded-full bg-white shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 border border-gray-100;
+}
+
+.social-link:hover {
+  @apply scale-110;
+}
+
+.social-link.linkedin:hover {
+  @apply bg-orange-50 border-orange-200;
+}
+
+.social-link.github:hover {
+  @apply bg-gray-50 border-gray-200;
+}
+
+.social-link.gmail:hover {
+  @apply bg-red-50 border-red-200;
+}
+
+.social-link img {
+  @apply transition-all duration-300;
 }

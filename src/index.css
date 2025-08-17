@@ -4,24 +4,144 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base styles with image-inspired color palette */
 :root {
-    --bg-gradient: linear-gradient(177deg, #E7F5FE 9.91%, #BEE4FF 71.21%);
-  }
-  
-  body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: var(--bg-gradient);
-    font-family: 'Inter', sans-serif;
-    background-repeat: no-repeat;
-  }
-  
-  #root {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  --bg-gradient: linear-gradient(177deg, #E7F5FE 9.91%, #BEE4FF 71.21%);
+  --primary-orange: #FF6B35;
+  --secondary-orange: #FF8C42;
+  --accent-orange: #FFA726;
+  --light-blue: #E3F2FD;
+  --dark-gray: #2C3E50;
+  --medium-gray: #5D6D7E;
+  --light-gray: #F8F9FA;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure no white backgrounds anywhere */
+html, body, #root, .App, .router-container, .about-section {
+  background: var(--bg-gradient) !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+/* Universal background class for any component */
+.universal-bg {
+  background: var(--bg-gradient) !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  min-height: 100vh;
+}
+
+body, html {
+  @apply h-full m-0 p-0;
+  font-family: 'Ropa Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-gradient);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#root {
+  @apply min-h-screen flex flex-col;
+  background: var(--bg-gradient);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold tracking-tight;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl;
+  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl;
+  color: var(--dark-gray);
+}
+
+h3 {
+  @apply text-2xl md:text-3xl lg:text-4xl;
+  color: var(--dark-gray);
+}
+
+p {
+  @apply leading-relaxed;
+  font-family: 'Ropa Sans', sans-serif;
+  color: var(--medium-gray);
+}
+
+/* Link styles */
+a {
+  @apply text-orange-500 hover:text-orange-600 transition-colors duration-200;
+}
+
+/* Button base styles */
+button {
+  @apply font-medium transition-all duration-200;
+}
+
+/* Image optimization */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Form elements */
+input, textarea, select {
+  @apply border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-500 focus:border-transparent;
+}
+
+/* Utility classes */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+/* Custom gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #E7F5FE 0%, #FFFFFF 100%);
+}
+
+.gradient-orange {
+  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+}
+
+.gradient-text-orange {
+  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
   

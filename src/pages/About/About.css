@@ -1,0 +1,35 @@
+.about-section {
+  background: linear-gradient(177deg, #E7F5FE 9.91%, #BEE4FF 71.21%);
+}
+
+/* Animation for skill tags */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-section h1 {
+    @apply text-2xl;
+  }
+  
+  .about-section h2 {
+    @apply text-xl;
+  }
+  
+  .about-section p {
+    @apply text-sm;
+  }
+}
+
+/* Hover effects for cards */
+.about-section .bg-white:hover {
+  @apply transform -translate-y-1;
+}

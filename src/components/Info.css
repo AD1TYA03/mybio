@@ -1,88 +1,36 @@
-.info-section{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 65%;
-    padding: 20px;
-    margin-top: 5vh;
-    margin-left: 4%;
-    overflow: visible;
-    background: transparent;
+/* Modern Button Styles */
+.primary-button {
+  @apply inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 border-0;
 }
 
-
-
-.hire-button{
-background: #000;
-color: #FFF;
-letter-spacing: 1.98px;
-}
-.resume-button{
-background: #FF7F6F;
-color: #FFF;
-letter-spacing: 1.98px;
+.primary-button:hover {
+  @apply from-orange-600 to-red-600;
 }
 
-
-h1{
-    font-size: 7vw;
-    max-width: 100%;
-    line-height: normal;
-    font-family: "Roboto Mono";
+.secondary-button {
+  @apply inline-flex items-center px-6 py-3 bg-white text-gray-800 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 border-2 border-gray-200 hover:border-gray-300;
 }
 
-h2{
-    font-size: 30px;
-    max-width: 100%;
-    color: rgb(25, 25, 25); 
+.secondary-button:hover {
+  @apply bg-gray-50;
 }
 
-p{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 60%;
-    font-size: large;
-    color: #686868;
-    font-family: "Ropa Sans";
+/* Container styles */
+.info-container {
+  @apply px-4 sm:px-6 lg:px-8;
 }
 
-button{
-    
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    padding: 12px;
-    text-align: center;
-    justify-content: center;
-    width: auto;
-    border-radius: 25px;
+/* Responsive text adjustments */
+@media (max-width: 640px) {
+  .info-container h1 {
+    @apply text-2xl;
+  }
 }
 
-.hire-button:hover{
-    background-color: white;
-    color: black;
-}
-.resume-button:hover{
-    background-color: white;
-    color: #FF7F6F;
-}
-
-.button-container{
-    max-width: 200px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.adi{
-    height: 40%;
-    width: 40%;
-    margin-right: 10%;
-    position: relative;
-}
-
-.main-info{
-    display: flex;
-    align-items: center;
-    padding-top: 10vh;
+@media (min-width: 641px) and (max-width: 1024px) {
+  .info-container h1 {
+    @apply text-3xl;
+  }
 }
 
 
